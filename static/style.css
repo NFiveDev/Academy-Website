@@ -1,16 +1,69 @@
-html {}
+:root {
+    --slate-dark: #1e293b;
+    --slate-50: #f8fafc;
+    --slate-300: #cbd5e1;
+    --primary-500: #10b981;
+}
+
+html {
+    height: 100%;
+}
 
 body {
+    font-size: 16px;
+    min-height: 100%;
     font-family: "Ubuntu", sans-serif;
-    margin-top: 50px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .nav-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(55, 71, 79);
+    background-color: var(--slate-dark);
+    color: var(--slate-light);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.nav-content-wrapper {}
+.nav-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+
+    a {
+        color: var(--slate-50);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: small;
+
+        &:hover {
+            color: var(--slate-300);
+        }
+    }
+
+    a.active {
+        color: var(--primary-500);
+    }
+}
+
+.brand-container {
+    a {
+        text-decoration: none;
+        color: var(--slate-50)
+    }
+}
+
+.content-wrapper {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 1536px;
+}
