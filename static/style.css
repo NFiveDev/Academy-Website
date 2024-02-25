@@ -53,12 +53,23 @@ body {
     }
 }
 
-.brand-container {
-    a {
-        text-decoration: none;
-        color: var(--slate-50)
+.brand {
+    text-decoration: none;
+    color: var(--slate-50);
+
+    .brand-container {
+       display: flex;
+       flex-direction: row;
+       flex-grow: 0;
+       gap: 0.5rem;
+       align-items: center;
+
+       i {
+        color: var(--primary-500);
+       }
     }
 }
+
 
 .content-wrapper {
     padding-right: 1.5rem;
