@@ -8,6 +8,13 @@
     --screen-small: 760px;
 }
 
+/* GLOSSARY (Search for the strings below) 
+    - LAYOUT
+    - BUTTONS
+*/
+
+/* LAYOUT */
+
 html {
     height: 100%;
 }
@@ -130,4 +137,10 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+}
+
+/* BUTTONS */
+
+.icon-button {
+
 }
