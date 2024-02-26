@@ -42,7 +42,7 @@ body {
         margin-right: auto;  
     }
 
-    .burger-button {
+    .nav-toggle {
         display: none;
 
         @media screen and (max-width: 760px) {
@@ -63,6 +63,8 @@ body {
         transition-duration: 500ms;
 
         @media screen and (min-width: 760px) {
+            padding: 0;
+            margin-top: 0px;
             position: static;
         }
     }
@@ -90,6 +92,10 @@ body {
 
         a.active {
             color: var(--primary-500);
+        }
+
+        @media screen and (min-width: 760px) {
+            flex-direction: row;
         }
     }
 

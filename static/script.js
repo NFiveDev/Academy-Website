@@ -1,6 +1,11 @@
-function ToggleNav() {
+function ToggleNav(open) {
+
     const navEl = document.querySelector('#navigation');
     const activeCls = 'nav-active';
 
-    navEl.classList.add(activeCls);
+    if(open) {
+        navEl.classList.add(activeCls);
+    } else {
+        navEl.classList.remove(activeCls);
+    }
 }
